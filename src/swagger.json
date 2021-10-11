@@ -1,0 +1,100 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "3.4.0",
+      "title": "Http-Service",
+      "description": "APIs for HTTP Service"
+    },
+    "host": "localhost:8082",
+    "basePath": "/",
+  "schemes": [
+    "http"
+  ], "securityDefinitions": {
+    "Bearer": {
+      "type": "apiKey",
+      "name": "Authorization",
+      "in": "header"
+    }
+  },
+  "paths": {
+    "/api/SUM": {
+      "get": {
+        "security": [
+          {
+            "Bearer": []
+          }
+        ],
+        "tags": [
+          "config"
+        ],
+        "description": "add data in collectionName",
+        "produces": [
+          
+        ],
+        "parameters": [
+          {
+            "name":"num1",
+            "in": "query",
+            
+            "description": "create a add details",
+            "required": true,
+            "type": "integer"
+          },
+          {
+            "name":"num2",
+            "in": "query",
+            
+            "description": "create a add details",
+            "required": true,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/definitions/addSchema"
+          }
+        }
+      }
+    },
+    "/api/SUB": {
+      "get": {
+        "security": [
+          {
+            "Bearer": []
+          }
+        ],
+        "tags": [
+          "config"
+        ],
+        "description": "add data in collectionName",
+        "produces": [
+          
+        ],
+        "parameters": [
+          {
+            "name":"num1",
+            "in": "query",
+            
+            "description": "create a add details",
+            "required": true,
+            "type": "integer"
+          },
+          {
+            "name":"num2",
+            "in": "query",
+            
+            "description": "create a add details",
+            "required": true,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            
+          }
+        }
+      }
+    }
+  }
+   
+}
