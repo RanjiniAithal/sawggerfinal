@@ -2,7 +2,7 @@
     "swagger": "2.0",
     "info": {
       "version": "3.4.0",
-      "title": "Http-Service",
+      "title": "Http-Servicess",
       "description": "APIs for HTTP Service"
     },
     "host": "localhost:8082",
